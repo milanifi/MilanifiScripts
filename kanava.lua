@@ -105,7 +105,7 @@ ServerSection:NewButton("Перезайти (Скрипт нужно перез�
     ts:Teleport(game.PlaceId, p)
 
     Notification:Notify(
-    {Title = "Перезахожу на сервер...", Description = "Это займёт 5 секунд."},
+    {Title = "Перезахожу на сервер...", Description = "Это займёт около 5 секунд."},
     {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
 )
 end)
