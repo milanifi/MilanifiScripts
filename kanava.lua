@@ -8,7 +8,7 @@ local Window = Library.CreateLib("milanifi.github.io | Симулятор пад
 local Main = Window:NewTab("Автофарм")
 local AutoFarmSection = Main:NewSection("Автофарм")
 
-AutoFarmSection:NewToggle("Вкл/Выкл (При выкл. перезайдёт)", "Автоматически зарабатывает монеты", function(state)
+AutoFarmSection:NewToggle("Вкл / Выкл", "Автоматически зарабатывает монеты", function(state)
     if state then
         while wait() do
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -12289, -28, 1, 0, 0, 0, 1, 0, 0, 0, 1)
@@ -18,6 +18,11 @@ AutoFarmSection:NewToggle("Вкл/Выкл (При выкл. перезайдё�
         local p = game:GetService("Players").LocalPlayer
 
         ts:Teleport(game.PlaceId, p)
+
+        Notification:Notify(
+    {Title = "Выключаю автофарм...", Description = "Это займёт около 5 секунд."},
+    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
+)
     end
 end)
 
