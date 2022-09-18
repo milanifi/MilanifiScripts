@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
-local Window = Library.CreateLib("milanifi.github.io | Симулятор падения в Канаву", "Ocean")
+local Window = Library.CreateLib("Симулятор падения в Канаву | milanifi.github.io", "Ocean")
 
 -- MAIN
 local Main = Window:NewTab("Автофарм")
